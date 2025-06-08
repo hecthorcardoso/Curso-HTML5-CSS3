@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+h1 {
+    color: gold;
+}
+h2 {
+    color: darkgoldenrod;
+}
+a {
+    color: whitesmoke;
+}

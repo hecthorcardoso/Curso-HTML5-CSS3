@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+    background-color: lightgray;
+    font-family: sans-serif;
+}
+
+p {
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+header > h1 {
+    margin: 0px;
+    font-size: 7em;
+    font-weight: bolder;
+    padding-top: 50px;
+}
+
+header > p {
+    font-size: 1.5em;
+    padding-bottom: 50px;
+}
+
+header > p > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header > p > a:hover {
+    text-decoration: underline;
+}
+
+section > p {
+    line-height: 200%;
+}
+
+#parte1 {
+    background-color: white;
+    padding: 100px 40px;
+    font-size: 2.5em;
+}
+
+#parte2 {
+    background-image: url("../imagens/background001.jpg");
+    background-position: center right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 100px 40px;
+    font-size: 2.5em;
+}
+
+#parte2 > p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 2px;
+    width: 500px;
+}
+
+#parte3 {
+    background-color: white;
+    padding: 100px 40px;
+    font-size: 2.5em;
+}
+
+#parte4 {
+    background-image: url("../imagens/background002.jpg");
+    background-position: left top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 100px 40px;
+    font-size: 2.5em;
+}
+
+#parte4 > p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 2px;
+    width: 500px;
+}
+
+#parte5 {
+    background-color: white;
+    padding: 100px 40px;
+    font-size: 2.5em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer > p {
+    text-align: center;
+    padding: 13px;
+    font-size: 1.5em;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}

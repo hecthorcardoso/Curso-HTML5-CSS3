@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 700px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            text-align: center;
+            vertical-align: middle;
+            background-color: lightgray;
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+
+        thead > tr> th {
+            position: sticky; 
+            top: -1px; 
+            background-color: gray;
+            border: 1px solid black;
+
+        }
+        
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        .numero {
+            text-align: right;
+        }
+        
+        thead, tfoot {
+           background-color: gray; 
+           color: white;
+        }
+    </style>
+
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Uso de grandes tabelas</h1>
+    <!--
+        Anatomia para tabelas grandes
+
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 80px;">Colocação</th>
+                <th scope="col">Sigla</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+                <td class="numero">1</td>
+                <td>[SP]</td>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+           </tr>
+           <tr>
+                <td class="numero">2</td>
+                <td>[MG]</td>
+                <td>Minas Gerais </td>
+                <td class="numero">21.168.791</td>
+           </tr>
+           <tr>
+                <td class="numero">3</td>
+                <td>[RJ]</td>
+                <td>Rio de Janeiro </td>
+                <td class="numero">17.264.943</td>
+           </tr>
+           <tr>
+                <td class="numero">4</td>
+                <td>[BA]</td>
+                <td>Bahia </td>
+                <td class="numero">14.837.064</td>
+           </tr>
+           <tr>
+                <td class="numero">5</td>
+                <td>[PR]</td>
+                <td>Paraná </td>
+                <td class="numero">11.433.597</td>
+           </tr>
+           <tr>
+                <td class="numero">6</td>
+                <td>[RS]</td>
+                <td>Rio Grande do Sul </td>
+                <td class="numero">11.377.239</td>
+           </tr>
+           <tr>
+                <td class="numero">7</td>
+                <td>[PE]</td>
+                <td>Pernambuco </td>
+                <td class="numero">9.577.071</td>
+           </tr>
+           <tr>
+                <td class="numero">8</td>
+                <td>[CE]</td>
+                <td>Ceará </td>
+                <td class="numero">9.132.078</td>
+           </tr>
+           <tr>
+                <td class="numero">9</td>
+                <td>[PA]</td>
+                <td>Pará </td>
+                <td class="numero">8.602.865</td>
+           </tr>
+           <tr>
+                <td class="numero">10</td>
+                <td>[SC]</td>
+                <td>Santa Catarina </td>
+                <td class="numero">7.164.788</td>
+           </tr>
+           <tr>
+                <td class="numero">11</td>
+                <td>[MA]</td>
+                <td>Maranhão </td>
+                <td class="numero">7.075.181</td>
+           </tr>
+           <tr>
+                <td class="numero">12</td>
+                <td>[GO]</td>
+                <td>Goiás </td>
+                <td class="numero">7.018.354</td>
+           </tr>
+           <tr>
+                <td class="numero">13</td>
+                <td>[AM]</td>
+                <td>Amazonas </td>
+                <td class="numero">4.144.597</td>
+           </tr>
+           <tr>
+                <td class="numero">14</td>
+                <td>[ES]</td>
+                <td>Espírito Santo </td>
+                <td class="numero">4.018.650</td>
+           </tr>
+           <tr>
+                <td class="numero">15</td>
+                <td>[PB]</td>
+                <td>Paraíba </td>
+                <td class="numero">4.018.127</td>
+           </tr>
+           <tr>
+                <td class="numero">16</td>
+                <td>[RN]</td>
+                <td>Rio Grande do Norte </td>
+                <td class="numero">3.506.853</td>
+           </tr>
+           <tr>
+                <td class="numero">17</td>
+                <td>[MT]</td>
+                <td>Mato Grosso </td>
+                <td class="numero">3.484.466</td>
+           </tr>
+           <tr>
+                <td class="numero">18</td>
+                <td>[AL]</td>
+                <td>Alagoas </td>
+                <td class="numero">3.337.357</td>
+           </tr>
+           <tr>
+                <td class="numero">19</td>
+                <td>[PI]</td>
+                <td>Piauí </td>
+                <td class="numero">3.273.227</td>
+           </tr>
+           <tr>
+                <td class="numero">20</td>
+                <td>[DF]</td>
+                <td>Distrito Federal </td>
+                <td class="numero">3.015.268</td>
+           </tr>
+           <tr>
+                <td class="numero">21</td>
+                <td>[MS]</td>
+                <td>Mato Grosso do Sul </td>
+                <td class="numero">2.778.986</td>
+           </tr>
+           <tr>
+                <td class="numero">22</td>
+                <td>[SE]</td>
+                <td>Sergipe </td>
+                <td class="numero">2.298.696</td>
+           </tr>
+           <tr>
+                <td class="numero">23</td>
+                <td>[RO]</td>
+                <td>Rondônia</td>
+                <td class="numero">1.777.225</td>
+           </tr>
+           <tr>
+                <td class="numero">24</td>
+                <td>[TO]</td>
+                <td>Tocantins</td>
+                <td class="numero">1.572.866</td>
+           </tr>
+           <tr>
+                <td class="numero">25</td>
+                <td>[AC]</td>
+                <td>Acre</td>
+                <td class="numero">881.935</td>
+           </tr>
+           <tr>
+                <td class="numero">26</td>
+                <td>[AP]</td>
+                <td>Amapá</td>
+                <td class="numero">845.731</td>
+           </tr>
+            <tr>
+                <td class="numero">27</td>
+                <td>[RR]</td>
+                <td>Roraima</td>
+                <td class="numero">605.761</td>
+           </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">total de habitantes</th>
+                <td></td>
+                <td></td>
+                <td>210.147.125</td>
+            </tr>
+        </tfoot>        
+    </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci rerum, amet dolorem assumenda vero tempore? Commodi error a ratione voluptate rerum ex quod odit nulla ea doloremque. Laborum, molestiae eum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, provident ullam! Amet numquam quisquam suscipit officia dolorum nisi accusamus? Quisquam eum vero ex inventore, libero animi. Magni alias dolor consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur modi vitae suscipit reiciendis consectetur quisquam. Voluptate quas quia ducimus inventore nemo sapiente fugiat quisquam ipsum temporibus assumenda. Porro, vel! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora iusto quae molestias nulla omnis sapiente unde dicta odit repellat adipisci rerum, ad perspiciatis non voluptates. Eligendi consequatur laudantium perspiciatis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci rerum, amet dolorem assumenda vero tempore? Commodi error a ratione voluptate rerum ex quod odit nulla ea doloremque. Laborum, molestiae eum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, provident ullam! Amet numquam quisquam suscipit officia dolorum nisi accusamus? Quisquam eum vero ex inventore, libero animi. Magni alias dolor consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur modi vitae suscipit reiciendis consectetur quisquam. Voluptate quas quia ducimus inventore nemo sapiente fugiat quisquam ipsum temporibus assumenda. Porro, vel! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora iusto quae molestias nulla omnis sapiente unde dicta odit repellat adipisci rerum, ad perspiciatis non voluptates. Eligendi consequatur laudantium perspiciatis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci rerum, amet dolorem assumenda vero tempore? Commodi error a ratione voluptate rerum ex quod odit nulla ea doloremque. Laborum, molestiae eum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, provident ullam! Amet numquam quisquam suscipit officia dolorum nisi accusamus? Quisquam eum vero ex inventore, libero animi. Magni alias dolor consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur modi vitae suscipit reiciendis consectetur quisquam. Voluptate quas quia ducimus inventore nemo sapiente fugiat quisquam ipsum temporibus assumenda. Porro, vel! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora iusto quae molestias nulla omnis sapiente unde dicta odit repellat adipisci rerum, ad perspiciatis non voluptates. Eligendi consequatur laudantium perspiciatis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci rerum, amet dolorem assumenda vero tempore? Commodi error a ratione voluptate rerum ex quod odit nulla ea doloremque. Laborum, molestiae eum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, provident ullam! Amet numquam quisquam suscipit officia dolorum nisi accusamus? Quisquam eum vero ex inventore, libero animi. Magni alias dolor consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur modi vitae suscipit reiciendis consectetur quisquam. Voluptate quas quia ducimus inventore nemo sapiente fugiat quisquam ipsum temporibus assumenda. Porro, vel! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora iusto quae molestias nulla omnis sapiente unde dicta odit repellat adipisci rerum, ad perspiciatis non voluptates. Eligendi consequatur laudantium perspiciatis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci rerum, amet dolorem assumenda vero tempore? Commodi error a ratione voluptate rerum ex quod odit nulla ea doloremque. Laborum, molestiae eum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, provident ullam! Amet numquam quisquam suscipit officia dolorum nisi accusamus? Quisquam eum vero ex inventore, libero animi. Magni alias dolor consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur modi vitae suscipit reiciendis consectetur quisquam. Voluptate quas quia ducimus inventore nemo sapiente fugiat quisquam ipsum temporibus assumenda. Porro, vel! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora iusto quae molestias nulla omnis sapiente unde dicta odit repellat adipisci rerum, ad perspiciatis non voluptates. Eligendi consequatur laudantium perspiciatis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci rerum, amet dolorem assumenda vero tempore? Commodi error a ratione voluptate rerum ex quod odit nulla ea doloremque. Laborum, molestiae eum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, provident ullam! Amet numquam quisquam suscipit officia dolorum nisi accusamus? Quisquam eum vero ex inventore, libero animi. Magni alias dolor consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur modi vitae suscipit reiciendis consectetur quisquam. Voluptate quas quia ducimus inventore nemo sapiente fugiat quisquam ipsum temporibus assumenda. Porro, vel! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora iusto quae molestias nulla omnis sapiente unde dicta odit repellat adipisci rerum, ad perspiciatis non voluptates. Eligendi consequatur laudantium perspiciatis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci rerum, amet dolorem assumenda vero tempore? Commodi error a ratione voluptate rerum ex quod odit nulla ea doloremque. Laborum, molestiae eum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, provident ullam! Amet numquam quisquam suscipit officia dolorum nisi accusamus? Quisquam eum vero ex inventore, libero animi. Magni alias dolor consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur modi vitae suscipit reiciendis consectetur quisquam. Voluptate quas quia ducimus inventore nemo sapiente fugiat quisquam ipsum temporibus assumenda. Porro, vel! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora iusto quae molestias nulla omnis sapiente unde dicta odit repellat adipisci rerum, ad perspiciatis non voluptates. Eligendi consequatur laudantium perspiciatis.</p>
+</body>
+</html>

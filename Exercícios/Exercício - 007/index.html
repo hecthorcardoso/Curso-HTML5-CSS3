@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+</head>
+<body>
+    <h1>1. Principais formatações</h1>
+        <h2><strong>1.1 Negrito // Destaque:</strong></h2>
+            <p>Nessa frase temos um <b>termo em negrito brabissimo.</b>usando a tag B (Não Semântica)
+            e nessa frase, tenho um <strong>termo em destaque</strong> usando STRONG (Semântica)</p>
+        <h2><em>1.2 Itálico // Ênfase</em></h2>
+            <p>Nessa frase, temos um <i>termo em Itálico</i> usando a tag I (Não Semântica) e nessa frase, temos um <em>termo em ênfase</em> usando a tag EM (Semântica)</p>
+        <h2><mark>1.3 Texto marcado (ou marca texto kkkk)</mark></h2>
+            <p>Podemos criar também um <mark>termo marcado</mark>
+            utilizando a tag MARK (Semântica)</p>
+        <h2>1.4<big> Texto maior</big> // <small>Texto menor</small></h2>
+            <p>Estou criando um <big>texto um pouco maior</big> usando a tag BIG (Não Semântica) e um <small>texto um pouco menor</small> usando a tag SMALL (Semântica)</p>
+        <h2>1.5<del> Texto deletado</del> // <ins>Texto inserido</ins></h2>
+            <p>Podemos marcar um texto que pode ser lido mas que não deve ser considerado <del>igual este texto</del> usando a tag DEL <br> e também podemos utilizar uma "lacuna" como se fosse uma inserção de texto <ins>igual este texto</ins> usando a tag INS<br>(ambas Semânticas)</p>
+            <h3>1.5.1 <u>Texto sublinhado</u></h3>
+                <p><u>Este texto</u> também pode ser lido como inserção, porém este é com a tag U (Não Semântica)</p>
+        <h2>1.6 Texto <sup>sobrescrito</sup> // Texto <sub>subscrito</sub></h2>
+            <p>Podemos escrever uma potência da maneira certa com a tag SUP, saindo de "x20 - x8 + 897" para "x<sup>20</sup> - x<sup>8</sup> + 897"<br> e escrever elemento da maneira correta também, saindo de "H2O" para "H<SUB>2</SUB>0"<br>(ambas Semânticas)</p>
+        <h2><code>1.7 Trechos de código</code></h2>
+            <P>Em trechos de código, utilizamos a tag CODE para mostrar ao usuário que se trata de um trecho de código pois as letras ficam <code>mono-espaçadas</code> </P>
+            <h3>1.7.1 Um código de exemplo (sem tag CODE)</h3>
+                <p>
+                    num = int(input('Digite um número: '))
+                    if num % 2 == 0:
+                        print(f'O número {num} é par') 
+                    else:
+                        pring(f'O número {num} é impar')
+                    print('FIM DO PROGRAMA')
+                </p>
+            <h3>1.7.2 Um código de exemplo (com tag CODE)</h3>
+            <p>
+                <CODE>
+                    num = int(input('Digite um número: '))
+                    if num % 2 == 0:
+                        print(f'O número {num} é par')
+                    else:
+                        pring(f'O número {num} é impar')
+                    print('FIM DO PROGRAMA')
+                </CODE>
+            </p>
+            <h3>1.7.3Um código de exemplo (com tag CODE + PRE)</h3>
+            <p>
+                <pre><code>
+                        num = int(input('Digite um número: '))
+                        if num % 2 == 0:
+                            print(f'O número {num} é par')
+                        else:
+                            print(f'O número {num} é impar')
+                        print('FIM DO PROGRAMA')
+                </pre></code><br>
+                PRE é uma tag de pré formatação, onde ele vai digitar na tela do jeito que digitamos no código. 
+            </p>
+        <h2>1.8 <q>Citações</q></h2>
+            <p>podemos usar a tag Q (do Inglês quote) para realizar a <q>citação</q>, caso precise usar uma citação para um parágrafo inteiro, usaremos a tag BLOCKQUOTE igual no exemplo a baixo.</p>
+            <blockquote><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore, excepturi enim, sed distinctio exercitationem tenetur provident laborum praesentium ad dolore ipsam aut delectus, veritatis culpa ullam odit harum iste!</p></blockquote>
+        <h2>1.9 Abrv.</h2>
+            <p>esse aqui é coisa nova, mas é mais para usar em nomes muito grandes que são mais comuns de serem falados por uma abreviação como o <abbr title="Hyper Text Markup Language 5">HTML5</abbr> e <abbr title="Cascading Style Sheets 3">CSS3</abbr></p>
+        <h2>1.10 <bdo dir="rtl">TEXTO INVERTIDO K K K K</bdo></h2>
+            <p>Iremos usar a tag BDO <em>(bi-directional override)</em>, teremos que complementar com o parâmetro DIR <em>(direction)</em> e indicar uma das duas direções possiveis:<br>RTL = da direita pra esquerda. <br>LTR = da esquerda pra direita</p>
+&#x1f596; &#x1f913;
+</body>
+</html>
